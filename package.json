@@ -4,10 +4,15 @@
     "npm": "^10.8.2"
   },
   "devDependencies": {
+    "jsmin": "^1.0.1",
     "typescript": "^5.8.2",
+    "uglify-js": "^3.19.3",
+    "uglifyjs": "^2.4.11",
     "vitest": "^3.0.9"
   },
   "scripts": {
+    "minify": "uglifyjs --compress --mangle --output dist/src/task3/task3.min.js -- dist/src/task3/task3.js",
+    "build": "tsc --declaration",
     "test": "vitest run"
   }
 }

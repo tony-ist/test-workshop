@@ -1,0 +1,1 @@
+function validateUserSignup(e,n,a,i){return/^[a-zA-Z0-9]{3,15}$/.test(e)?n.includes("@")&&n.includes(".")?a.length<8||20<a.length||!/\d/.test(a)?"Invalid password":i<18||99<i?"Invalid age":"Signup successful":"Invalid email":"Invalid username"}Object.defineProperty(exports,"__esModule",{value:!0}),exports.validateUserSignup=validateUserSignup;

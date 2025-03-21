@@ -1,9 +1,9 @@
 import { expect, describe, it } from 'vitest';
-import { sortNumbers } from './task2';
+import { validateUserSignup } from './task2';
 
-describe('sortNumbers', () => {
-  it('should sort an array of numbers', () => {
-    expect(sortNumbers([3, 1, 2])).toStrictEqual([1, 2, 3]);
+describe('validateUserSignup', () => {
+  it('should validate user signup', () => {
+    expect(validateUserSignup('username', 'john@doe.com', '12345678abc', 30)).toBe('Signup successful');
   });
 
   // Add your tests here

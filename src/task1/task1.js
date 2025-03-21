@@ -1,0 +1,1 @@
+function reverseString(e){return e.split("").reverse().join("")}Object.defineProperty(exports,"__esModule",{value:!0}),exports.reverseString=reverseString;
